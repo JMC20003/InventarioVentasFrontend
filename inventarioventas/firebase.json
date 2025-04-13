@@ -1,0 +1,16 @@
+{
+  "hosting": {
+    "public": "dist/inventarioventas",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ],
+    "rewrites": [
+      {
+        "source": "/dist/inventarioventas/browser/index.html",
+        "destination": "/index.html"
+      }
+    ]
+  }
+}
