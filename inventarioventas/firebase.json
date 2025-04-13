@@ -8,7 +8,7 @@
     ],
     "rewrites": [
       {
-        "source": "/dist/inventarioventas/browser/index.html",
+        "source": "**",
         "destination": "/index.html"
       }
     ]
