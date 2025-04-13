@@ -5,16 +5,26 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './components/header/header.component';
 import { FooterComponent } from './components/footer/footer.component';
+import { MaterialModule } from './modules/material/material.module';
+import { InicioComponent } from './components/inicio/inicio.component';
+import { ContactoComponent } from './components/contacto/contacto.component';
+import { FormsModule } from '@angular/forms';
+import { ProductoDetalleComponent } from './components/producto-detalle/producto-detalle.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
-    FooterComponent
+    FooterComponent,
+    InicioComponent,
+    ContactoComponent,
+    ProductoDetalleComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    MaterialModule,
+    FormsModule,
   ],
   providers: [
     provideClientHydration(withEventReplay())

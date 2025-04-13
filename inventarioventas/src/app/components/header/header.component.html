@@ -1,2 +1,32 @@
-<h1>BIENVENIDOS A MI TIENDA ONLINE</h1>
-<h2>QUE TE PARECE ?</h2>
+<mat-sidenav-container class="sidenav-container">
+    <mat-sidenav #sidenav mode="over" class="sidenav" fixedInViewport>
+      <mat-nav-list>
+        <a mat-list-item routerLink="/inicio" >Productos</a>
+        <a mat-list-item routerLink="/contacto" (click)="abrirFormularioContacto(); sidenav.close()">Contáctanos</a>
+      </mat-nav-list>
+    </mat-sidenav>
+  
+    <mat-sidenav-content>
+      <mat-toolbar color="primary">
+        <div class="logo-nombre">
+          <img src="https://e7.pngegg.com/pngimages/849/336/png-clipart-t-shirt-computer-icons-t-shirt-style-tshirt-angle.png" alt="Logo" class="logo" />
+          <span routerLink="/inicio" class="nombre-empresa">Mi Tienda</span>
+        </div>
+  
+        <span class="spacer"></span>
+  
+        <!-- Menú en pantallas grandes -->
+        <nav class="nav-links">
+          <a mat-button routerLink="/inicio">Productos</a>
+          <a mat-button (click)="abrirFormularioContacto(); sidenav.close()" routerLink="/contacto">Contáctanos</a>
+        </nav>
+  
+        <!-- Ícono hamburguesa en pantallas pequeñas -->
+        <button mat-icon-button class="menu-button" (click)="sidenav.toggle()" >
+          <mat-icon>menu</mat-icon> 
+        </button>
+        
+      </mat-toolbar>
+    </mat-sidenav-content>
+  </mat-sidenav-container>
+  

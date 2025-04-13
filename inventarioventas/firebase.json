@@ -1,6 +1,6 @@
 {
   "hosting": {
-    "public": "dist/inventarioventas",
+    "public": "dist/inventarioventas/browser",
     "ignore": [
       "firebase.json",
       "**/.*",
