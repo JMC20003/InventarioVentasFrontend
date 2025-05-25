@@ -30,22 +30,6 @@
     outline: none;
   }
   
-  .guardar-btn {
-    width: 100%;
-    padding: 12px;
-    background-color: #007BFF;
-    color: white;
-    font-weight: bold;
-    border: none;
-    border-radius: 6px;
-    cursor: pointer;
-    transition: background-color 0.3s;
-  }
-  
-  .guardar-btn:hover {
-    background-color: #0056b3;
-  }
-
   .botones {
     display: flex;
     justify-content: center; /* Centra horizontalmente */
@@ -80,6 +64,12 @@
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2); /* Sombra */
   }
   
+  /*---------------tabla-------------*/
+
+  .mat-elevation-z8{
+    background-color:rgb(31, 29, 29);
+    margin-bottom: 25px;
+  }
   /* Responsive */
   @media (max-width: 600px) {
     .formulario-producto {

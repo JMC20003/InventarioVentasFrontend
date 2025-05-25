@@ -1,13 +1,13 @@
 .container-carrito {
-  max-width: 500px;
+  max-width: 800px;
   margin: 0 auto;
   padding: 16px;
-  background-color: #930861;
+  background-color:#94095c; 
   margin-top: 15px;
   margin-bottom: 15px;
 }
 .contenido-card{
-    background-color: #40da58;
+    background-color: whitesmoke;
     display: flex;
     justify-content: center; /* centra horizontalmente las cajas */
     gap: 20px; /* espacio entre los divs */
@@ -65,7 +65,25 @@ mat-card-content p {
   justify-content: center;
   margin-top: 24px;
 }
+.delete-button{
+    background-color:rgb(224, 10, 10);
+    color: whitesmoke;  }
 
+.delete-button:hover{
+    background-color: red;
+
+}
+
+.demo-button{
+    background-color: whitesmoke;
+    color: black;  }
+
+.demo-button:hover{
+    background-color:#34df53;
+}
+.nombreCategoria{
+    color: black;
+}
 @media (max-width: 600px) {
   .container {
     padding: 8px;

@@ -12,19 +12,19 @@
             
 
             <div class="info-producto">
-            <mat-card-header>
-                <mat-card-title>{{ producto.nombre }}</mat-card-title>
-                <mat-card-subtitle>Categoría: {{ producto.categoria }}</mat-card-subtitle>
+            <mat-card-header class="nombreCategoria">
+                <mat-card-title class="nombreCategoria" >{{ producto.nombre }}</mat-card-title>
+                <mat-card-subtitle class="nombreCategoria" >Categoría: {{ producto.categoria }}</mat-card-subtitle>
             </mat-card-header>
 
             <mat-card-content>
-                <p><strong>Stock:</strong> {{ producto.stock }}</p>
-                <p><strong>Cantidad:</strong> {{ producto.cantidad }}</p>
+                <p><strong>Cantidad:</strong> 1 </p>
                 <p><strong>Precio:</strong> {{ producto.precio }}</p>
+                <p><strong>Descripcion:</strong> {{ producto.cantidad }}</p>
             </mat-card-content>
 
             <mat-card-actions class="acciones-card">
-                <button mat-raised-button color="warn" (click)="eliminarDelCarrito(producto.id)">
+                <button  class="delete-button" mat-raised-button  (click)="eliminarDelCarrito(producto.id)">
                 Eliminar
                 </button>
             </mat-card-actions>
@@ -34,7 +34,7 @@
     </div>
 
     <div class="boton-comprar">
-        <button mat-raised-button color="primary" (click)="comprarPorWhatsapp()">
+        <button class="demo-button" mat-raised-button  (click)="comprarPorWhatsapp()">
         Comprar por WhatsApp
         </button>
     </div>

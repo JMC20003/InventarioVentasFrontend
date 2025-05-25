@@ -15,17 +15,19 @@
   width: 100%;
   max-width: 400px;
   padding: 2rem;
-  background-color:rgb(134, 5, 134); 
+  background-color:#94095c; 
   border-radius: 12px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
 }
-
+input{
+    background-color: black;
+}
 /* Forzar el color del input y el label */
-::ng-deep .mat-form-field-infix input {
+.mat-form-field-infix input {
   color: black !important;
 }
 
-::ng-deep .mat-form-field-label {
+.mat-form-field-label {
   color: black !important;
 }
 
@@ -34,11 +36,13 @@
   margin-bottom: 1rem;
 }
 
-button {
-  width: 80%;
+.demo-button{
+    background-color: whitesmoke;
+    color: black;  }
+
+.demo-button:hover{
+    background-color: wheat;
 }
-
-
 .botones-container {
   display: flex;
   flex-direction: column; /* uno debajo del otro */

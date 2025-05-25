@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
+import { Producto } from '../../models/producto';
 
 @Component({
   selector: 'app-inicio',
@@ -9,6 +10,7 @@ import { ActivatedRoute } from '@angular/router';
 })
 export class InicioComponent {
   
+
   productoId: string | null = null;
 
   constructor(private route: ActivatedRoute) {}
@@ -20,7 +22,6 @@ export class InicioComponent {
 
   productos = [
     {
-      id:14,
       nombre: 'Camiseta Barcelona',
       descripcion: 'Temporada 2024 - Local',
       precio: 59.99,
@@ -54,24 +55,6 @@ export class InicioComponent {
       nombre: 'Camiseta PSG',
       descripcion: 'Temporada 2024 - Local',
       precio: 69.99,
-      imagen: 'https://www.aisope.com.pe/images/HZQM/NDBH0550_10.jpg'
-    },
-    {
-      nombre: 'Camiseta Argentina',
-      descripcion: 'Campeón del Mundo 2022',
-      precio: 74.99,
-      imagen: 'https://www.aisope.com.pe/images/HZQM/NDBH0550_10.jpg'
-    },
-    {
-      nombre: 'Camiseta Argentina',
-      descripcion: 'Campeón del Mundo 2022',
-      precio: 74.99,
-      imagen: 'https://www.aisope.com.pe/images/HZQM/NDBH0550_10.jpg'
-    },
-    {
-      nombre: 'Camiseta Argentina',
-      descripcion: 'Campeón del Mundo 2022',
-      precio: 74.99,
       imagen: 'https://www.aisope.com.pe/images/HZQM/NDBH0550_10.jpg'
     }
      // Puedes seguir agregando más...
