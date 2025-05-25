@@ -33,3 +33,4 @@ jobs:
           firebaseServiceAccount: ${{ secrets.FIREBASE_TOKEN }}
           channelId: live
           projectId: tabal-ed9a9  # Asegúrate que sea tu ID exacto de Firebase
+          entryPoint: dir/inventarioventas
