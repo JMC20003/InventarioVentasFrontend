@@ -12,16 +12,24 @@ import { RegisterComponent } from './components/register/register.component';
 import { adminGuard } from './guards/admin.guard';
 import { CarritoComponent } from './components/carrito/carrito.component';
 
+export function getPrerenderParams() {
+  return [
+    { id: '1' },
+    { id: '2' },
+    { id: '3' }
+  ];
+}
+
 const routes: Routes = [
   { path:"",component:InicioComponent},
   { path:"inicio",component:InicioComponent},
-  { path: 'producto-detalle/:id', component: ProductoDetalleComponent },
-  { path:'producto',component:ProductoComponent, canActivate: [adminGuard]},
-  {path:'categorias/adultos', component:ProductoAdultosComponent},
-  {path:'categorias/ninos', component:ProductoMenoresComponent},
-  {path:'login', component:LoginComponent},
-  {path:'register', component:RegisterComponent},
-  { path: 'carrito', component: CarritoComponent }
+  { path: "producto-detalle/:id", component: ProductoDetalleComponent},
+  { path:"producto",component:ProductoComponent, canActivate: [adminGuard]},
+  {path:"categorias/adultos", component:ProductoAdultosComponent},
+  {path:"categorias/ninos", component:ProductoMenoresComponent},
+  {path:"login", component:LoginComponent},
+  {path:"register", component:RegisterComponent},
+  { path: "carrito", component: CarritoComponent }
 
 
 ];  

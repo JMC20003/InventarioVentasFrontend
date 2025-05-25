@@ -15,9 +15,9 @@ export class ProductoServiceService {
     return this.clientHTTP.post<Producto>("http://localhost:8080/api/productos/registrar",producto)
   }
   deleteProduct(id: number) {
-    return this.clientHTTP.delete(`http://localhost:8080/api/productos/eliminar/${id}`);
+    return this.clientHTTP.delete("http://localhost:8080/api/productos/eliminar/"+ id.toString());
   }
   obtenerProductoPorId(id: number) {
-  return this.clientHTTP.get<Producto>(`http://localhost:8080/api/productos/${id}`);
+  return this.clientHTTP.get<Producto>("http://localhost:8080/api/productos/"+ id.toString());
   }
 }
