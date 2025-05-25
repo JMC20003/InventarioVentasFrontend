@@ -10,7 +10,9 @@ import { MatDialogModule } from '@angular/material/dialog'; // Importar MatDialo
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-
+import { MatTableModule } from '@angular/material/table';
+import { MatMenuModule } from '@angular/material/menu';
+import { MatExpansionModule } from '@angular/material/expansion';
 @NgModule({
   declarations: [],
   imports: [
@@ -24,7 +26,10 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     MatDialogModule,
     MatFormFieldModule,
     MatInputModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    MatTableModule,
+    MatMenuModule,
+    MatExpansionModule
   ],
   exports:[
     MatButtonModule,
@@ -36,7 +41,10 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     MatDialogModule,
     MatFormFieldModule,
     MatInputModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    MatTableModule,
+    MatMenuModule,
+    MatExpansionModule
   ]
 })
 export class MaterialModule { }

@@ -1,5 +1,5 @@
 <div class="productos-container">
-    <mat-card class="producto-card" *ngFor="let producto of productos" [routerLink]="['/producto', producto.nombre]">
+    <mat-card class="producto-card" *ngFor="let producto of productos" [routerLink]="['/producto-detalle', producto.id]">
       <img mat-card-image [src]="producto.imagen" alt="{{ producto.nombre }}">
       <mat-card-content>
         <h3>{{ producto.nombre }}</h3>

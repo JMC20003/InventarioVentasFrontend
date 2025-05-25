@@ -15,6 +15,7 @@ export class ContactoComponent {
     phone: '',
     message: ''
   };
+  
   constructor(private dialogRef: MatDialogRef<ContactoComponent>) {}
 
   enviar() {

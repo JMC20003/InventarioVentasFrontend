@@ -20,6 +20,7 @@ export class InicioComponent {
 
   productos = [
     {
+      id:14,
       nombre: 'Camiseta Barcelona',
       descripcion: 'Temporada 2024 - Local',
       precio: 59.99,
